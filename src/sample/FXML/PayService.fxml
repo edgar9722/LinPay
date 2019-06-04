@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="400.0"   stylesheets="/sample/Complements/dark-theme.css" xmlns:fx="http://javafx.com/fxml/1"  >
+
+      <Label layoutX="98.0" layoutY="59.0" text="Servicios" textFill="WHITE">
+         <font>
+            <Font name="Poppins ExtraBold" size="43.0" />
+         </font>
+      </Label>
+      <TableView fx:id="" layoutX="51.0" layoutY="140.0" prefHeight="170.0" prefWidth="295.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+    <TableView fx:id="" layoutX="51.0" layoutY="320.0" prefHeight="170.0" prefWidth="295.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+    </TableView>
+      <Label layoutX="65.0" layoutY="490.0" prefHeight="43.0" prefWidth="155.0" text=" Saldo actual:" textFill="#fcfafa">
+         <font>
+            <Font name="Poppins Regular" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="saldoActualLB" layoutX="220.0" layoutY="490.0" prefHeight="43.0" prefWidth="108.0" text="\$2000" textFill="#f5f4f4">
+         <font>
+            <Font name="Poppins Medium" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="534.0" text="Monto a pagar: " textFill="#f8f6f6">
+         <font>
+            <Font name="Poppins Regular" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="montoApagarTF" layoutX="179.0" layoutY="530.0" prefHeight="27.0" prefWidth="143.0" />
+      <Button fx:id="pagarTF" layoutX="197.0" layoutY="573.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="108.0" text="PAGAR" textFill="#fcf7f7">
+         <font>
+            <Font name="Poppins SemiBold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBTN" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0">
+          <graphic>
+              <FontAwesomeIconView glyphName="ANGLE_DOUBLE_LEFT" glyphSize="30" fill= "azure"/>
+          </graphic>
+
+      </Button>
+
+</AnchorPane>

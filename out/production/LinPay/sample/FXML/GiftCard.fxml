@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="400.0" stylesheets="/sample/Complements/dark-theme.css"  xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Label layoutX="84.0" layoutY="78.0" prefHeight="84.0" prefWidth="247.0" text="GiftCard" textFill="#fcfafa">
+         <font>
+            <Font name="Poppins ExtraBold" size="51.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="228.0" text="Ingresar tu codigo" textFill="#f8f5f5">
+         <font>
+            <Font name="Poppins Regular" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="codigoTF" layoutX="93.0" layoutY="269.0" prefHeight="37.0" prefWidth="215.0" />
+       <Button fx:id="agregarBT" layoutX="142.0" layoutY="368.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="117.0" text="Agregar" textFill="#f2ecec" />
+       <Button fx:id="backBTN" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0">
+           <graphic>
+               <FontAwesomeIconView glyphName="ANGLE_DOUBLE_LEFT" glyphSize="30" fill= "azure"/>
+           </graphic>
+
+       </Button>
+   </children>
+</AnchorPane>
