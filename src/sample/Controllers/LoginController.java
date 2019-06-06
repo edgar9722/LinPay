@@ -28,8 +28,11 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         mssql.Connect("SA","<Barong58>");
+        loginDAO.prueba();
+
+
         loginBTN.setOnAction(event -> {
-            validar(username.getText(),password.getText());
+            //validar(username.getText(),password.getText());
         });
     }
     public static void validar(String username , String password){

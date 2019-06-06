@@ -17,6 +17,7 @@ public class Mssql {
         System.out.print("Connecting to SQL Server ... ");
         try {
             // Load SQL Server JDBC driver and establish connection.
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             System.out.print("Connecting to SQL Server ... ");
             try (Connection connection = DriverManager.getConnection(connectionUrl)) {
                 System.out.println("Done.");
@@ -25,12 +26,14 @@ public class Mssql {
 
         } catch (SQLException ex) {
             Logger.getLogger(Mssql.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
 
     }
 
-    public static Connection getConnection() {
-        if (conn == null) Connect("SA","<Barong58");
+    public static Connection getConn() {
+       // if (conn == null) Connect("SA","<Barong58");
         return conn;
     }
 
